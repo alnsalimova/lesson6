@@ -1,0 +1,20 @@
+package ru.mirea.salimovaar.employeedb;
+
+import androidx.room.Entity;
+import androidx.room.PrimaryKey;
+
+@Entity
+public class Employee {
+    @PrimaryKey(autoGenerate = true)
+    public long id;
+    public String name;
+    public int salary;
+
+    public String getName() {
+        return name;
+    }
+
+    public String getSalary() {
+        return String.valueOf(salary);
+    }
+}
